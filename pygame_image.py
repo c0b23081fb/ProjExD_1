@@ -22,8 +22,8 @@ def main():
         
         for event in pg.event.get():
             if event.type == pg.QUIT: return
-        xk = 0
-        yk = 0
+        xk = 0  #x軸
+        yk = 0  #y軸
         x = -(tmr % 3200)
         screen.blit(bg_img, [x, 0])
         screen.blit(bg2_img,[x+1600,0])
